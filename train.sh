@@ -68,8 +68,7 @@ python ../trl_dpo.py \
     --no_remove_unused_columns \
     --use_peft \
     --lora_r 32 \
-    --lora_alpha 16 \
-    --resume_from_checkpoint instruct_var2_fold5/checkpoint-500  \
+    --lora_alpha 16 \  \
     2>&1 | tee train_var${VARIATION}_fold${FOLD}.log
 
 cd ..
