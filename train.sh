@@ -52,7 +52,7 @@ fi
 cd ${MODEL}
 
 python ../trl_dpo.py \
-    --dataset_name sebloft/dpo_task${VARIATION} \
+    --dataset_name XXX/dpo_task${VARIATION} \
     --dataset_config fold${FOLD} \
     --model_name_or_path ${MODEL_NAME} \
     --learning_rate 5.0e-7 \
