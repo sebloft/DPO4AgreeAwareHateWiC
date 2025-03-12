@@ -31,6 +31,9 @@ validate_variation_number() {
 # Parse command-line arguments
 while [[ "$#" -gt 0 ]]; do
     case "$1" in
+        --help)
+            usage
+            ;;
         --folds)
             shift
             while [[ "$#" -gt 0 && ! "$1" =~ ^-- ]]; do
@@ -38,7 +41,6 @@ while [[ "$#" -gt 0 ]]; do
                 shift
             done
             ;;
-
         --variations)
             shift
             while [[ "$#" -gt 0 && ! "$1" =~ ^-- ]]; do

@@ -23,6 +23,9 @@ validate_number() {
 # Parse command-line arguments
 while [[ "$#" -gt 0 ]]; do
     case "$1" in
+        --help)
+            usage
+            ;;
         --cpu)
             CPU="$2"
             shift 2
